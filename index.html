@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chef's Atelier</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header class="header">
+    <img src="images/logo.png" alt="Sabor & Festa" class="logo" />
+    <nav>
+      <a href="#quem-somos">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Chef's Atelier</h1>
+    <h2>Transformamos seu espaço em uma experiência gastronômica    </h2>
+    <button onclick="alert('Entre em contato para reservar!')">Reservar Buffet</button>
+  </section>
+
+  <section id="quem-somos" class="quem-somos">
+    <h2>Quem Somos</h2>
+    <p>
+      No <strong>Chef’s Atelier</strong>, criamos experiências gastronômicas sob medida, para quem busca mais do que apenas um jantar. Somos um serviço especializado de gastronomia, que leva até você o cuidado, a técnica e a elegância no conforto da sua casa ou no espaço que você escolher.<br><br>
+      Cada menu é autoral, construído com ingredientes sazonais e pensado para deixar sua ocasião ainda mais especial. Nós preparamos, servimos e finalizamos com sofisticação, e cuidamos de cada detalhe. E mais do que cozinhar, nos dedicamos a <em>criar memórias com sabor</em>.
+    </p>
+  </section>
+  
+  <section id="servicos" class="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="cards-container">
+      <!-- Repita o bloco abaixo para cada serviço -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/1.jpeg" alt="Buffet Personalizado" />
+            <h3>Buffet Personalizado</h3>
+          </div>
+          <div class="card-back">
+            <p>Planejamos cardápios únicos e sofisticados para todos os tipos de eventos.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/2.jpeg" alt="Jantares Privativos" />
+            <h3>Jantares Privativos</h3>
+          </div>
+          <div class="card-back">
+            <p>Transformamos sua casa em um restaurante exclusivo para você e seus convidados.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/3.jpeg" alt="Eventos Corporativos" />
+            <h3>Eventos Corporativos</h3>
+          </div>
+          <div class="card-back">
+            <p>Serviço elegante e eficiente para reuniões, workshops e confraternizações.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/4.jpeg" alt="Mesa de Doces" />
+            <h3>Mesa de Doces</h3>
+          </div>
+          <div class="card-back">
+            <p>Doces artesanais e refinados para impressionar seus convidados com elegância.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/5.jpeg" alt="Coquetel" />
+            <h3>Coquetel</h3>
+          </div>
+          <div class="card-back">
+            <p>Finger foods e drinks sofisticados para recepções e celebrações dinâmicas.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/6.jpeg" alt="Menu Degustação" />
+            <h3>Menu Degustação</h3>
+          </div>
+          <div class="card-back">
+            <p>Uma jornada gastronômica com pratos autorais e harmonizações selecionadas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <section id="galeria" class="galeria">
+    <h2>Galeria de Eventos</h2>
+    <div class="carousel">
+      <div class="carousel-track" id="carousel-track">
+        <!-- Substitua os srcs pelas suas imagens reais -->
+        <img src="images/Foto1.jpeg" alt="Evento 1" />
+        <img src="images/Foto2.jpeg" alt="Evento 2" />
+        <img src="images/Foto3.jpeg" alt="Evento 3" />
+        <img src="images/Foto4.jpeg" alt="Evento 4" />
+        <img src="images/Foto5.jpeg" alt="Evento 5" />
+        <img src="images/Foto6.jpeg" alt="Evento 6" />
+        <img src="images/Foto7.jpeg" alt="Evento 7" />
+        <img src="images/Foto8.jpeg" alt="Evento 8" />
+        <img src="images/Foto9.jpeg" alt="Evento 9" />
+        <img src="images/Foto10.jpeg" alt="Evento 10" />
+      </div>
+      <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+      <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+    </div>
+  </section>
+  
+
+  <section class="avaliacoes" id="avaliacoes">
+    <h2 class="avaliacoes-titulo">Avaliações</h2>
+    <div class="cards-container">
+      <div class="avl">
+        <div class="stars">★★★★★</div>
+        <p>“Comida impecável e serviço incrível!”</p>
+        <strong>– Maria J.</strong>
+      </div>
+      <div class="avl">
+        <div class="stars">★★★★★</div>
+        <p>“Experiência única e saborosa.”</p>
+        <strong>– Pedro S.</strong>
+      </div>
+      <div class="avl">
+        <div class="stars">★★★★☆</div>
+        <p>“Organização perfeita do início ao fim!”</p>
+        <strong>– Ana L.</strong>
+      </div>
+  
+      <div class="avl hidden">
+        <div class="stars">★★★★★</div>
+        <p>“Os convidados amaram tudo!”</p>
+        <strong>– Lucas M.</strong>
+      </div>
+      <div class="avl hidden">
+        <div class="stars">★★★★☆</div>
+        <p>“Voltaremos a contratar com certeza!”</p>
+        <strong>– Fernanda K.</strong>
+      </div>
+      <div class="avl hidden">
+        <div class="stars">★★★★★</div>
+        <p>“Atendimento de excelência!”</p>
+        <strong>– Rafael T.</strong>
+      </div>
+    </div>
+    <button class="ver-mais-btn" onclick="mostrarMaisAvaliacoes()">Ver mais</button>
+  </section>
+  
+  
+
+  <section id="contact" class="section">
+    <h2>Solicite um Orçamento</h2>
+    <form>
+      <input type="text" placeholder="Nome" required />
+      <input type="email" placeholder="E-mail" required />
+      <input type="tel" placeholder="Telefone" />
+      <textarea placeholder="Detalhes do evento"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    © 2025 Sabor & Festa · Todos os direitos reservados
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
